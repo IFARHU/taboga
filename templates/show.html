@@ -1,96 +1,91 @@
 ---
-layout: default
+layout: default-fluid
 ---
+<div class="row">
+	<div class="col-md-12">
+		<ul class="breadcrumb">
+			<li><a href="index.html">Index</a></li>
+			<li><a href="{{site.baseurl}}/templates/admin/dashboard">Admin dashboard</a></li>
+			<li class="active">Stephen Jobs</li>
+		</ul>
 
-<div class="container-fluid">
-	<ul class="breadcrumb">
-		<li><a href="index.html">Index</a></li>
-		<li><a href="{{base}}/templates/admin/dashboard">Admin dashboard</a></li>
-		<li class="active">Stephen Jobs</li>
-	</ul>
+			<p>
+				<a href="#" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</a>
+				<a href="{{site.baseurl}}/templates/formulario" class="btn btn-info"><i class="fa fa-pencil"></i> Editar</a>
+			</p>
+		<div class="jumbotron">
+			<div class="container-fluid">
+				<h1>Stephen Jobs</h1>
+				<h2>Cedula: E-EEE-EE</h2>
+				
+				<hr>
 
-	<p>
-		<a href="#" class="btn btn-danger">Eliminar</a>
-		<a href="{{base}}/templates/admin/edit.html" class="btn btn-info">Editar</a>
-	</p>
-
-	<div class="row">
-		<div class="col-md-12">
-			<div class="jumbotron">
-				<div class="container-fluid">
-					<h1>Stephen Jobs</h1>
-					<h3>Cedula: E-EEE-EE</h3>
-					
-					<hr>
-
-					<ul class="list-unstyled">
-						<li><strong>id:</strong> 1</li>
-						<li><strong>Cédula:</strong> E-EEE-EEE</li>
-						<li><strong>País:</strong> Panamá</li>
-						<li><strong>Beneficio:</strong> Concurso General Doctorado</li>
-						<li><strong>Fecha de Nacimiento:</strong> 20-7-1955</li>
-						<li><strong>Centro:</strong> Florida State University</li>
-					</ul>
-					
+				<ul class="list-unstyled">
+					<li><strong>id:</strong> 1</li>
+					<li><strong>Cédula:</strong> E-EEE-EEE</li>
+					<li><strong>País:</strong> Panamá</li>
+					<li><strong>Beneficio:</strong> Concurso General Doctorado</li>
+					<li><strong>Fecha de Nacimiento:</strong> 20-7-1955</li>
+					<li><strong>Centro:</strong> Florida State University</li>
+				</ul>
 				</div>
+			</div>
+		</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Descripción
+			</div>
+
+			<div class="panel-body">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ut non nobis inventore accusantium itaque, possimus eos ad maxime architecto in libero omnis, assumenda nisi deleniti id laborum molestias quisquam!
+				</p>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<p>Observaciones</p>
+			</div>
+
+			<div class="panel-body">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus impedit sit, quaerat beatae fugit. Quo mollitia nulla animi iste voluptates ab quas harum, laborum porro temporibus dicta hic quae nisi!
+				</p>
 			</div>
 		</div>
 	</div>
-
-	<div class="row">
-		<div class="col-md-4">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					Descripción
-				</div>
-
-				<div class="panel-body">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ut non nobis inventore accusantium itaque, possimus eos ad maxime architecto in libero omnis, assumenda nisi deleniti id laborum molestias quisquam!
-					</p>
-				</div>
+	
+	<div class="col-md-8">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<p>Bitácora</p>
 			</div>
 
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<p>Observaciones</p>
-				</div>
+			<div class="panel-body">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>id</th>
+							<th>Actividad</th>
+							<th>Fecha Entrada</th>
+							<th>Fecha Salida</th>
+						</tr>
+					</thead>
 
-				<div class="panel-body">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus impedit sit, quaerat beatae fugit. Quo mollitia nulla animi iste voluptates ab quas harum, laborum porro temporibus dicta hic quae nisi!
-					</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-md-8">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<p>Bitácora</p>
-				</div>
-
-				<div class="panel-body">
-					<table class="table table-hover">
-						<thead>
-							<tr>
-								<th>id</th>
-								<th>Actividad</th>
-								<th>Fecha Entrada</th>
-								<th>Fecha Salida</th>
-							</tr>
-						</thead>
-
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Ingresó al programa de Concurso General</td>
-								<td>5/5/2015</td>
-								<td>5/5/2019</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Ingresó al programa de Concurso General</td>
+							<td>5/5/2015</td>
+							<td>5/5/2019</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>

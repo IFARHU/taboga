@@ -1,60 +1,47 @@
 ---
 layout: default
 ---
+<div class="row">
+	<div class="col-md-12">
+		<div class="jumbotron">
+			<h1>Página de Inicio</h1>
+			<p class="lead">
+				<strong><a href="https://github.com/IFARHU/taboga">Taboga Templates</a></strong> son un conjunto de archivos HTML <em>estáticos</em>, los cuales por medio de <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> se transforman en un sitio de apariencia dinámica de manera simple y estructurada. 
+			</p>
 
-<div class="container">
-	<div class="jumbotron">
-		<h1>Landing page</h1>
-		<p class="lead">
-			<strong><a href="https://github.com/IFARHU/taboga">Taboga Templates</a></strong> son un conjunto de archivos HTML <em>estáticos</em>, los cuales por medio de <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> se transforman en un sitio de apariencia dinámica de manera simple y estructurada. 
-		</p>
-
-		<p class="lead">
-			Este proyecto, al igual que Taboga, cuenta con Gulp como administrador de tareas y un conjunto de dependencias canalizadas por medio de Bower y Npm.
-		</p>
-		<p><a href="/">Volver a sitio principal de Taboga</a></p>
+			<p class="lead">
+				Este proyecto, al igual que Taboga, cuenta con Gulp como administrador de tareas y un conjunto de dependencias canalizadas por medio de Bower y Npm.
+			</p>
+			<p><a href="{{ site.baseurl }}/">Volver a sitio principal de Taboga</a></p>
+		</div>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-			<hr>
-			<h3>Templates CRUD</h3>
-				<ul>
-					<li>
-						<p class=""><a href="{{ site.baseurl }}/templates/create">Create</a></p>
-					</li>
-					
-					<li>
-						<p class=""><a href="{{ site.baseurl }}/templates/edit">Edit</a></p>
-					</li>
-					
-					<li>
-						<p class=""><a href="{{ site.baseurl }}/templates/index">Index</a></p>
-					</li>
-					
-					<li>
-						<p class=""><a href="{{ site.baseurl }}/templates/show">Show</a></p>
-					</li>
+	<div class="col-md-12">
+		<hr>
+		<h3>Templates CRUD</h3>
+			<ul>
+				<li>
+					<p class=""><a href="{{ site.baseurl }}/templates/formulario">Formularios</a></p>
+				</li>
+				
+				<li>
+					<p class=""><a href="{{ site.baseurl }}/templates/index">Index</a></p>
+				</li>
+				
+				<li>
+					<p class=""><a href="{{ site.baseurl }}/templates/show">Show</a></p>
+				</li>
 
-					<li>
-						<p class=""><a href="{{ site.baseurl }}/templates/login">Login</a></p>
-					</li>
-				</ul>
+				<li>
+					<p class=""><a href="{{ site.baseurl }}/templates/login">Login</a></p>
+				</li>
+			</ul>
 
-			<h3>Templates Administrativos</h3>
-				<ul>
-					<li>
-						<p class=""><a href="{{ site.baseurl }}/templates/admin/create">Create</a></p>
-					</li>
-					<li>
-						<p class=""><a href="{{ site.baseurl }}/templates/admin/dashboard">Admin Dashboard</a></p>
-					</li>
-					<li>
-						<p class=""><a href="{{ site.baseurl }}/templates/admin/edit">Admin Edit</a></p>
-					</li>
-				</ul>
-			</div>
-		</div>
+		<h3>Templates Administrativos</h3>
+			<ul>
+				<li>
+					<p class=""><a href="{{ site.baseurl }}/templates/admin/dashboard">Dashboard</a></p>
+				</li>
+			</ul>
 	</div>
 </div>

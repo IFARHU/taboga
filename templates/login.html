@@ -1,30 +1,39 @@
 ---
-layout: default
+layout: login
 ---
+<div class="row" id="top">
+	<div class="col-sm-8 col-sm-offset-2 text-center">
+		<h1>Bienvenid@</h1>
+		<p class="lead">Bienvenid@ a <strong>Template Taboga</strong></p>
+		<p class="lead">
+			Taboga Templates son un conjunto de archivos HTML <em>estáticos</em>, los cuales por medio de Jekyll se transforman en un sitio de apariencia dinámica de manera simple y estructurada. 
+		</p>
 
-<div class="container">
-	<h1 class="text-center login-title">Iniciar Sessión</h1>			
-	<hr>
+		<p class="lead">
+			Este proyecto, al igual que Taboga, cuenta con Gulp como administrador de tareas y un conjunto de dependencias canalizadas por medio de Bower y Npm.
+		</p>
+	</div>
+</div>
 
-	<div class="col-md-6 col-md-offset-3">
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<div class="panel panel panel-default ">
+			<div class="panel-heading">
+				Iniciar Sesión
+			</div>
+			<div class="panel-body">
+				<div class="form-group">
+					<label for="username">Usuario</label>
+					<input type="text" tabindex="1" placeholder="n.apellido" class="form-control">
+				</div>
 
-		<div class="login-title">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<div class="panel-body">
-						<p>Login:</p>
-						<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
-						<p>Password:</p>
-						<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+				<div class="form-group">
+					<label for="username">Contraseña</label>
+					<input type="password" tabindex="2" placeholder="Contraseña" class="form-control">
+				</div>
 
-						<p>¿No puedes entrar al sistema?<a href="http://wiki.ifarhu.gob.pa/xwiki/bin/view/Manuales/Secci%C3%B3n+de+Servicio+al+Usuario" target="_blank"> Solicite sus credenciales</a>
-						</p>
-
-						<hr>
-						
-						<a href="index.html" class="btn btn-success btn-block pull-left">Ingresar</a>	
-						<a href="index.html" class="btn btn-info btn-block pull-right"> Volver</a>
-					</div>
+				<div class="form-group">
+					<a href="{{site.baseurl}}/templates/index" class="btn btn-success btn-lg btn-block">Iniciar Sesión</a>
 				</div>
 			</div>
 		</div>

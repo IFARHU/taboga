@@ -28,6 +28,7 @@
     "fontawesome": "~4.2.0",
     "jquery.sparkline": "http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js",
     "select2": "~3.5.1",
-    "select2-bootstrap-css": "~1.4.1"
+    "select2-bootstrap-css": "~1.4.1",
+    "jquery-backstretch": "^2.0.4"
   }
 }

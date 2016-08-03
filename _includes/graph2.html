@@ -1,0 +1,60 @@
+<div id="2d-chart-container">Loading ...</div>
+<script>
+	$(document).ready(function(){
+		// Fusion Charts 2D Doughtnut
+		FusionCharts.ready(function () {
+			var revenueChart = new FusionCharts({
+				type: 'doughnut2d',
+				renderAt: '2d-chart-container',
+				width: '450',
+				height: '450',
+				dataFormat: 'json',
+				dataSource: {
+					"chart": {
+						"caption": "Distribución por tipo de programa",
+						"subCaption": "Año fiscal 2015",
+						"numberPrefix": "",
+						"paletteColors": "#0075c2,#1aaf5d,#f2c500,#f45b00,#8e0000",
+						"bgColor": "#ffffff",
+						"showBorder": "0",
+						"use3DLighting": "0",
+						"showShadow": "0",
+						"enableSmartLabels": "0",
+						"startingAngle": "310",
+						"showLabels": "0",
+						"showPercentValues": "1",
+						"showLegend": "1",
+						"legendShadow": "0",
+						"legendBorderAlpha": "0",
+						"defaultCenterLabel": "Total de participantes: 64.08K",
+						"centerLabel": "Participantes de $label: $value",
+						"centerLabelBold": "1",
+						"showTooltip": "0",
+						"decimals": "0",
+						"captionFontSize": "14",
+						"subcaptionFontSize": "14",
+						"subcaptionFontBold": "0"
+					},
+					"data": [
+						{
+							"label": "Concurso General",
+							"value": "28504"
+						},
+						{
+							"label": "Exoneración",
+							"value": "14633"
+						},
+						{
+							"label": "Beca Universal",
+							"value": "10507"
+						},
+						{
+							"label": "Becas Internacionales",
+							"value": "4910"
+						}
+					]
+				}
+			}).render();
+		}); 
+	});
+</script>

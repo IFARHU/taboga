@@ -1,48 +1,66 @@
 ---
 layout: default
 ---
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-		    <ol class="breadcrumb">
-		        <li><a href="{{ site.baseurl }}/templates/admin/dashboard">Admin Dashboard</a></li>
-		        <li>Editar</li>
-		    </ol>
+<div class="row">
+	<div class="col-md-3">
+		<div class="main-box infographic-box colored emerald-bg">
+			<i class="fa fa-users"></i>
+			<span class="headline">Registros</span>
+			<span class="value">6713</span>
 		</div>
-		<div class="col-md-12">
-		<h1>Tablero para administradores  - <a href="{{ site.baseurl }}/templates/admin/create" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Crear</a> </h1>
+	</div>
 
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<th>id</th>
-						<th>Nombre</th>
-						<th>Roles</th>
-						<th>Acciones</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>Robert Cecil Martin</td>
-						<td><label for="" class="label label-primary">User </label></td>
-						<td><a href="{{ site.baseurl }}/templates/admin/edit.html" class="btn btn-success">Edit</a> <button class="btn-danger">Borrar</button></td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>Steve Krugg</td>
-						<td><label for="" class="label label-success">Admin </label></td>
-						<td><a href="{{ site.baseurl }}/templates/admin/edit.html" class="btn btn-success">Edit</a> <button class="btn-danger">Borrar</button></td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>Warren Buffet</td>
-						<td><label for="" class="label label-info">Super Admin </label></td>
-						<td><a href="{{ site.baseurl }}/templates/admin/edit.html" class="btn btn-success">Edit</a> <button class="btn-danger">Borrar</button></td>
-					</tr>
-				</tbody>
-			</table>
+	<div class="col-md-3">
+		<div class="main-box infographic-box colored red-bg">
+			<i class="fa fa-envelope"></i>
+			<span class="headline">Denegado</span>
+			<span class="value">543</span>
+		</div>
+	</div>
+
+	<div class="col-md-3">
+		<div class="main-box infographic-box colored green-bg">
+			<i class="fa fa-check-square"></i>
+			<span class="headline">Por confirmar</span>
+			<span class="value">240</span>
+		</div>
+	</div>
+
+	<div class="col-md-3">
+		<div class="main-box infographic-box colored emerald-bg">
+			<i class="fa fa-search"></i>
+			<span class="headline">Confirmado</span>
+			<span class="value">500</span>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{% include graph1.html%}
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{% include graph3.html %}
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{% include graph2.html%}
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{% include graph4.html %}
+			</div>
 		</div>
 	</div>
 </div>

@@ -1,0 +1,120 @@
+<div id="dual-tone-chart-container">Loading ...</div>
+<script>
+	$(document).ready(function(){
+		FusionCharts.ready(function () {
+			var revenueChart = new FusionCharts({
+				type: 'msbar2d',
+				renderAt: 'dual-tone-chart-container',
+				width: '450',
+				height: '450',
+				dataFormat: 'json',
+				dataSource: {
+					"chart": {
+						"caption": "Comparación por programa de becas",
+						"subCaption": "Dentro de la escuelas privadas",
+						"yAxisname": "Cantidad de beneficiarios",
+						"paletteColors": "#0075c2,#1aaf5d",
+						"bgColor": "#ffffff",
+						"showBorder": "0",
+						"showHoverEffect":"1",
+						"showCanvasBorder": "0",
+						"usePlotGradientColor": "0",
+						"plotBorderAlpha": "10",
+						"legendBorderAlpha": "0",
+						"legendShadow": "0",
+						"placevaluesInside": "1",
+						"valueFontColor": "#ffffff",
+						"showXAxisLine": "1",
+						"xAxisLineColor": "#999999",
+						"divlineColor": "#999999",
+						"divLineIsDashed": "1",
+						"showAlternateVGridColor": "0",
+						"subcaptionFontBold": "0",
+						"subcaptionFontSize": "14"
+					},            
+					"categories": [
+						{
+							"category": [
+								{
+									"label": "St. Mary's School"
+								}, 
+								{
+									"label": "Oxford International School"
+								}, 
+								{
+									"label": "King's College"
+								}, 
+								{
+									"label": "The British Academy"
+								}, 
+								{
+									"label": "Enrico Fermin"
+								}
+							]
+						}
+					],            
+					"dataset": [
+						{
+							"seriesname": "Excellencia Estudiantil",
+							"data": [
+								{
+									"value": "170"
+								}, 
+								{
+									"value": "195"
+								}, 
+								{
+									"value": "125"
+								}, 
+								{
+									"value": "145"
+								}, 
+								{
+									"value": "175"
+								}
+							]
+						}, 
+						{
+							"seriesname": "Exoneración",
+							"data": [
+								{
+									"value": "254"
+								}, 
+								{
+									"value": "298"
+								}, 
+								{
+									"value": "218"
+								}, 
+								{
+									"value": "195"
+								}, 
+								{
+									"value": "115"
+								}
+							]
+						}
+					],
+					"trendlines": [
+						{
+							"line": [
+								{
+									"startvalue": "150",
+									"color": "#0075c2",
+									"valueOnRight": "1",
+									"displayvalue": "Concurso G."
+								},
+								{
+									"startvalue": "220",
+									"color": "#1aaf5d",
+									"valueOnRight": "1",
+									"displayvalue": "Exoneración"
+								}
+							]
+						}
+					]
+				}
+			}).render();
+		});
+	});
+</script>

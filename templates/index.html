@@ -1,29 +1,26 @@
 ---
-layout: default
+layout: default-fluid
 ---
+<ul class="breadcrumb">
+	<li><a href="{{ site.baseurl }}/templates/index">Dashboard</a></li>
+</ul>
 
-<div class="container-fluid">
-	<ul class="breadcrumb">
-		<li><a href="{{ site.baseurl }}/templates/{{ site.baseurl }}.html">Dashboard</a></li>
-	</ul>
-
-	<div class="row">
-		<div class="col-md-9">
-			<h2>List View <a href="create.html" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Crear</a></h2>
+<div class="row">
+	<div class="col-md-9 col-sm-12 col-xs-12">
+		<h2>Listado <a href="{{ site.baseurl }}/templates/admin/formulario.html" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Crear</a></h2>
+		<div class="table-responsive">
 			<table class="table table-hover">
 				<thead>
 					<tr>
-						<th>Seleccionar</th>
+						<th><input type="checkbox" value=""></th>
 						<th>#</th>
 						<th>Nombre</th>
 						<th>Cedula</th>
-						<th>País</th>
 						<th>Beneficio</th>
 						<th>Fecha de Nacimiento</th>
-						<th>Centro</th>
 						<th>Cedula Acudiente</th>
-						<th>Nombre Acudiente</th>
-						<th>Correo electronico</th>
+						<th>Estado</th>
+						<th>Acciones</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -32,56 +29,56 @@ layout: default
 						<td>1</td>
 						<td><a href="show.html"> Stephen Jobs </a></td>
 						<td>E-EEE-EEE</td>
-						<td>Panamá</td>
 						<td>Concurso General Doctorado</td>
 						<td>20-7-1955</td>
-						<td>Florida State University</td>
 						<td>N-EEE-EEE</td>
-						<td>Jeff Jobs</td>
-						<td><a href="#" target="_blanck">stephenj@apple.com</a></td>
+						<td><label for="" class="label label-success">Activo</label></td>
+						<td>
+							<a href="{{ site.baseurl }}/templates/admin/formulario.html" class="btn btn-success btn-xs">Edit</a> <a class="btn btn-danger btn-xs">Borrar</a>
+						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
+	</div>
 
-		<div class="col-md-3">
-			<form>
-				<p>
-					<button class="btn btn-primary" href="#" role="button">Filtrar</button>
-					<a class="btn btn-default" href="dashboard.html" role="button">Restablecer Filtros</a>
-				</p>
+	<div class="col-md-3">
+		<form>
+			<p>
+				<button class="btn btn-primary" href="#" role="button">Filtrar</button>
+				<a class="btn btn-default" href="{{ site.baseurl }}/templates/index" role="button">Restablecer Filtros</a>
+			</p>
 
-				<div class="panel panel-default">
-					<div class="panel-heading">Nombre</div>
-					<div class="panel-body">
-						<div class="form-group">
-							<input type="text" name="nombre" class="form-control">
-						</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Nombre</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<input type="text"  placeholder="Bob Smith" name="nombre" class="form-control">
 					</div>
 				</div>
+			</div>
 
-				<div class="panel panel-default">
-					<div class="panel-heading">Cedula</div>
-					<div class="panel-body">
-						<div class="form-group">
-							<input type="text" name="codigo" class="form-control">
-						</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Cedula</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<input type="text"  placeholder="8-5599-22393" name="codigo" class="form-control">
 					</div>
 				</div>
+			</div>
 
-				<div class="panel panel-default">
-					<div class="panel-heading">Tipo Centro</div>
-					<div class="panel-body">
-						<div class="form-group">
-							<select name="tipo" id="tipo" class="form-control select2" required="required">
-								<option value="" selected>-- SELECCIONAR --</option>
-								<option value="Convocatorias">Oficial</option>
-								<option value="Cursos y Seminarios">Privado</option>
-							</select>
-						</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Tipo Centro</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<select name="tipo" id="tipo" class="form-control select2" required="required">
+							<option value="" selected>-- SELECCIONAR --</option>
+							<option value="Convocatorias">Oficial</option>
+							<option value="Cursos y Seminarios">Privado</option>
+						</select>
 					</div>
 				</div>
-			</form>
-		</div>
+			</div>
+		</form>
 	</div>
 </div>

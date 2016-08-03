@@ -1,0 +1,55 @@
+.main-box {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+  border-radius: 3px;
+  background-clip: padding-box;
+}
+.infographic-box.colored {
+  color: #fff;
+  border: 0 !important;
+}
+.infographic-box {
+  padding: 20px;
+}
+.emerald-bg {
+  background-color: #03a9f4!important;
+}
+.green-bg {
+  background-color: #8bc34a!important;
+}
+.red-bg {
+  background-color: #e84e40!important;
+}
+.infographic-box.colored i {
+  font-size: 4.6em;
+  margin-left: 7px;
+  color: #fff;
+}
+.infographic-box i {
+  font-size: 2.4em;
+  display: block;
+  float: left;
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+  color: #fff;
+}
+.infographic-box.colored .headline {
+  display:block;
+  text-align: right;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.infographic-box .value {
+  font-size: 2.1em;
+  font-weight: 600;
+  margin-top: -5px;
+  display: block;
+  text-align: right;
+}

@@ -1,444 +1,402 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>IFARHU - Taboga</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+active: estilos
+---
 
-        <link rel="icon" type="image/png" href="images/favicon.ico" />
+<h1 class="page-header">Estilos</h1>
 
-        <!--////////-->
-        <!-- Styles -->
-        <!-- Normalize -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/normalize.css/normalize.css">
-        <!-- Taboga Styles -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/build/css/taboga.css">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/fontawesome/css/font-awesome.min.css">
-        <!-- Select2 -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/select2/select2.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/select2-bootstrap-css/select2-bootstrap.css">
-        <!-- Custom Fonts -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
-        <!-- Modernizr -->
-        <script src="{{ site.baseurl }}/bower_components/modernizr/modernizr.js"></script>
-        <!--////////-->
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<div class="panel panel-default">
+	<div class="panel-heading">Títulos</div>
+	<div class="panel-body">
+		<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+		<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+		<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+		<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+		<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+		<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+	</div>
+</div>
 
-        <!-- Header -->
-        <header id="header">
-            {% include navbar.html %}
-        </header>
-        <!-- /Header-->
+<div class="panel panel-default">
+	<div class="panel-heading">Cuerpo</div>
+	<div class="panel-body">
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloribus ab quam ratione, veritatis exercitationem iure ipsum cum fuga recusandae minima veniam officia tenetur quaerat, voluptas qui ipsam nisi eum.</p>
+		<p>Eveniet vero quibusdam est nulla. Illum beatae et, rerum, voluptatibus nulla, laborum aliquam est ad nobis dolore sint! Blanditiis amet enim aperiam.</p>
+	</div>
+</div>
 
-        <!-- Main -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="page-header">Estilos</h1>
+<div class="panel panel-default">
+	<div class="panel-heading">Citas</div>
+	<div class="panel-body">
+		<blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+			<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+		</blockquote>
+	</div>
+</div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Títulos</div>
-                        <div class="panel-body">
-                            <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
-                            <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
-                            <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
-                            <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
-                            <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
-                            <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
-                        </div>
-                    </div>
+<div class="panel panel-default">
+	<div class="panel-heading">Tablas</div>
+	<div class="panel-body">
+		<table class="table">
+			<h2>Sencillas</h2>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Usuario</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Cuerpo</div>
-                        <div class="panel-body">
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloribus ab quam ratione, veritatis exercitationem iure ipsum cum fuga recusandae minima veniam officia tenetur quaerat, voluptas qui ipsam nisi eum.</p>
-                            <p>Eveniet vero quibusdam est nulla. Illum beatae et, rerum, voluptatibus nulla, laborum aliquam est ad nobis dolore sint! Blanditiis amet enim aperiam.</p>
-                        </div>
-                    </div>
+		<h2>Con franjas</h2>
+		<table class="table table-stripped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Usuario</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Citas</div>
-                        <div class="panel-body">
-                            <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
+		<h2>Con franjas y al pasar el mouse</h2>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Usuario</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Tablas</div>
-                        <div class="panel-body">
-                            <table class="table">
-                                <h2>Sencillas</h2>
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Nombre</th>
-                                        <th>Apellido</th>
-                                        <th>Usuario</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+<div class="panel panel-default">
+	<div class="panel-heading">Formulario</div>
+	<div class="panel-body">
+		<form role="form">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputFile">File input</label>
+				<input type="file" id="exampleInputFile">
+				<p class="help-block">Example block-level help text here.</p>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					Option one is this and that&mdash;be sure to include why it's great
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+				Option two can be something else and selecting it will deselect option one
+				</label>
+			</div>
+			<textarea class="form-control" rows="3"></textarea>
+			<br />
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</div>
 
-                            <h2>Con franjas</h2>
-                            <table class="table table-stripped">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Nombre</th>
-                                        <th>Apellido</th>
-                                        <th>Usuario</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+<div class="panel panel-default">
+	<div class="panel-heading">Formulario horizontal</div>
+	<div class="panel-body">
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Remember me
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">Sign in</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 
-                            <h2>Con franjas y al pasar el mouse</h2>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Nombre</th>
-                                        <th>Apellido</th>
-                                        <th>Usuario</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+<div class="panel panel-default">
+	<div class="panel-heading">Botones</div>
+	<div class="panel-body">
+		<h2>Distintos tamaños</h2>
+		<button type="button" class="btn btn-lg btn-primary">Large button</button>
+		<button type="button" class="btn btn-primary">Default button</button>
+		<button type="button" class="btn btn-sm btn-primary">Small button</button>
+		<button type="button" class="btn btn-xs btn-primary">Extra small button</button>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Formulario</div>
-                        <div class="panel-body">
-                            <form role="form">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputFile">File input</label>
-                                    <input type="file" id="exampleInputFile">
-                                    <p class="help-block">Example block-level help text here.</p>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> Check me out
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                        Option one is this and that&mdash;be sure to include why it's great
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                    Option two can be something else and selecting it will deselect option one
-                                    </label>
-                                </div>
-                                <textarea class="form-control" rows="3"></textarea>
-                                <br />
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                    </div>
+		<h2>Distintos colores</h2>
+		<button type="button" class="btn btn-lg btn-default">Default</button>
+		<button type="button" class="btn btn-lg btn-primary">Primary</button>
+		<button type="button" class="btn btn-lg btn-inverse">Inverse</button>
+		<button type="button" class="btn btn-lg btn-success">Success</button>
+		<button type="button" class="btn btn-lg btn-info">Info</button>
+		<button type="button" class="btn btn-lg btn-warning">Warning</button>
+		<button type="button" class="btn btn-lg btn-danger">Danger</button>
+		<button type="button" class="btn btn-lg btn-link">Link</button>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Formulario horizontal</div>
-                        <div class="panel-body">
-                            <form class="form-horizontal" role="form">
-                                <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                                    <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <button type="submit" class="btn btn-primary">Sign in</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+		<h2>Estado activo</h2>
+		<button type="button" class="btn btn-lg btn-default active">Default</button>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Botones</div>
-                        <div class="panel-body">
-                            <h2>Distintos tamaños</h2>
-                            <button type="button" class="btn btn-lg btn-primary">Large button</button>
-                            <button type="button" class="btn btn-primary">Default button</button>
-                            <button type="button" class="btn btn-sm btn-primary">Small button</button>
-                            <button type="button" class="btn btn-xs btn-primary">Extra small button</button>
+		<h2>Estado desactivado</h2>
+		<button type="button" class="btn btn-lg btn-default" disabled="disabled">Default</button>
+	</div>
+</div>
 
-                            <h2>Distintos colores</h2>
-                            <button type="button" class="btn btn-lg btn-default">Default</button>
-                            <button type="button" class="btn btn-lg btn-primary">Primary</button>
-                            <button type="button" class="btn btn-lg btn-inverse">Inverse</button>
-                            <button type="button" class="btn btn-lg btn-success">Success</button>
-                            <button type="button" class="btn btn-lg btn-info">Info</button>
-                            <button type="button" class="btn btn-lg btn-warning">Warning</button>
-                            <button type="button" class="btn btn-lg btn-danger">Danger</button>
-                            <button type="button" class="btn btn-lg btn-link">Link</button>
+<div class="panel panel-default">
+	<div class="panel-heading">Botones desplegables</div>
+	<div class="panel-body">
+		<!-- Single button -->
+		<div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				Action <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
+		<!-- Split button -->
+		<div class="btn-group">
+			<button type="button" class="btn btn-danger">Action</button>
+			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+				<span class="caret"></span>
+				<span class="sr-only">Toggle Dropdown</span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-                            <h2>Estado activo</h2>
-                            <button type="button" class="btn btn-lg btn-default active">Default</button>
+<div class="panel panel-default">
+	<div class="panel-heading">Grupo de botones</div>
+	<div class="panel-body">
+		<div class="btn-toolbar" role="toolbar">
+			<div class="btn-toolbar" role="toolbar">
+				<div class="btn-group btn-group-lg">
+					<button type="button" class="btn btn-default">Left</button>
+					<button type="button" class="btn btn-default">Middle</button>
+					<button type="button" class="btn btn-default">Right</button>
+				</div>
+			</div>
 
-                            <h2>Estado desactivado</h2>
-                            <button type="button" class="btn btn-lg btn-default" disabled="disabled">Default</button>
-                        </div>
-                    </div>
+			<br>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Botones desplegables</div>
-                        <div class="panel-body">
-                            <!-- Single button -->
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                    Action <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                            <!-- Split button -->
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-danger">Action</button>
-                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                                    <span class="caret"></span>
-                                    <span class="sr-only">Toggle Dropdown</span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+			<div class="btn-toolbar" role="toolbar">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default">Left</button>
+					<button type="button" class="btn btn-default">Middle</button>
+					<button type="button" class="btn btn-default">Right</button>
+				</div>
+			</div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Grupo de botones</div>
-                        <div class="panel-body">
-                            <div class="btn-toolbar" role="toolbar">
-                                <div class="btn-toolbar" role="toolbar">
-                                    <div class="btn-group btn-group-lg">
-                                        <button type="button" class="btn btn-default">Left</button>
-                                        <button type="button" class="btn btn-default">Middle</button>
-                                        <button type="button" class="btn btn-default">Right</button>
-                                    </div>
-                                </div>
+			<br>
 
-                                <br>
+			<div class="btn-toolbar" role="toolbar">
+				<div class="btn-group btn-group-sm">
+					<button type="button" class="btn btn-default">Left</button>
+					<button type="button" class="btn btn-default">Middle</button>
+					<button type="button" class="btn btn-default">Right</button>
+				</div>
+			</div>
 
-                                <div class="btn-toolbar" role="toolbar">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default">Left</button>
-                                        <button type="button" class="btn btn-default">Middle</button>
-                                        <button type="button" class="btn btn-default">Right</button>
-                                    </div>
-                                </div>
+			<br>
 
-                                <br>
+			<div class="btn-toolbar" role="toolbar">
+				<div class="btn-group btn-group-xs">
+					<button type="button" class="btn btn-default">Left</button>
+					<button type="button" class="btn btn-default">Middle</button>
+					<button type="button" class="btn btn-default">Right</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-                                <div class="btn-toolbar" role="toolbar">
-                                    <div class="btn-group btn-group-sm">
-                                        <button type="button" class="btn btn-default">Left</button>
-                                        <button type="button" class="btn btn-default">Middle</button>
-                                        <button type="button" class="btn btn-default">Right</button>
-                                    </div>
-                                </div>
+<div class="panel panel-default">
+	<div class="panel-heading">Menús desplegables</div>
+	<div class="panel-body">
+		<div class="dropdown">
+			<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+				Dropdown
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+				<li role="presentation" class="divider"></li>
+				<li role="presentation" class="dropdown-header">Dropdown header</li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+				<li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-                                <br>
+<div class="panel panel-default">
+	<div class="panel-heading">Pestañas y pills</div>
+	<div class="panel-body">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#" data-original-title="" title="">Home</a></li>
+			<li><a href="#" data-original-title="" title="">Profile</a></li>
+			<li><a href="#" data-original-title="" title="">Messages</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" data-original-title="" title="">
+					Dropdown <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#" data-original-title="" title="">Action</a></li>
+					<li><a href="#" data-original-title="" title="">Another action</a></li>
+					<li><a href="#" data-original-title="" title="">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="#" data-original-title="" title="">Separated link</a></li>
+				</ul>
+			</li>
+		</ul>
 
-                                <div class="btn-toolbar" role="toolbar">
-                                    <div class="btn-group btn-group-xs">
-                                        <button type="button" class="btn btn-default">Left</button>
-                                        <button type="button" class="btn btn-default">Middle</button>
-                                        <button type="button" class="btn btn-default">Right</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+		<br>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Menús desplegables</div>
-                        <div class="panel-body">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                    Dropdown
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                    <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                    <li role="presentation" class="divider"></li>
-                                    <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+		<ul class="nav nav-pills">
+			<li role="presentation" class="active"><a href="#">Home</a></li>
+			<li role="presentation"><a href="#">Profile</a></li>
+			<li role="presentation"><a href="#">Messages</a></li>
+		</ul>
+	</div>
+</div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Pestañas y pills</div>
-                        <div class="panel-body">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#" data-original-title="" title="">Home</a></li>
-                                <li><a href="#" data-original-title="" title="">Profile</a></li>
-                                <li><a href="#" data-original-title="" title="">Messages</a></li>
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" data-original-title="" title="">
-                                        Dropdown <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#" data-original-title="" title="">Action</a></li>
-                                        <li><a href="#" data-original-title="" title="">Another action</a></li>
-                                        <li><a href="#" data-original-title="" title="">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#" data-original-title="" title="">Separated link</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		Select2
+	</div>
+	<div class="panel-body">
+		<div class="form-group">
+			<label for="roles[]">Roles</label>
+			<select class="form-control select2" multiple="1" name="roles[]">
+				<option value="1">Admin</option>
+				<option value="2">Captador</option>
+				<option value="3">Usuario</option>
+			</select>
+		</div>
+	</div>
+</div>
 
-                            <br>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		Sparklines
+	</div>
+	<div class="panel-body">
+		{% include sparklines.html %}
+	</div>
+</div>
 
-                            <ul class="nav nav-pills">
-                                <li role="presentation" class="active"><a href="#">Home</a></li>
-                                <li role="presentation"><a href="#">Profile</a></li>
-                                <li role="presentation"><a href="#">Messages</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Resto de los componentes</div>
-                        <div class="panel-body">
-                            <p>Taboga está basado en Twitter Bootstrap, por lo que es útil evaluar la <a href="http://getbootstrap.com">documentación oficial de Twitter Bootstrap</a>. Todos los componentes originales de Twitter Bootstrap están disponibles en Taboga.</p>
-                        </div>
-                    </div>
-                </div><!--/col-xs-12-->
-            </div><!--/#row-->
-        </div><!--/#container-fluid-->
-
-        <hr />
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>&copy; Desarrollado por la Dirección de Tecnología Informática del <a href="">IFARHU</a>.</p>
-                </div>
-            </div>
-        </div>
-
-        <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="{{ site.baseurl }}/bower_components/jquery.sparkline/index.js"></script>
-        <script src="{{ site.baseurl }}/build/js/bootstrap.min.js"></script>
-
-        <!-- Select2 -->
-        <script src="{{ site.baseurl }}/bower_components/select2/select2.min.js"></script>
-        <script src="{{ site.baseurl }}/bower_components/select2/select2_locale_es.js"></script>
-
-        <!-- Taboga -->
-        <script src="{{ site.baseurl }}/build/js/taboga.min.js"></script>
-    </body>
-</html>
+<div class="panel panel-default">
+	<div class="panel-heading">Resto de los componentes</div>
+	<div class="panel-body">
+		<p>Taboga está basado en Twitter Bootstrap, por lo que es útil evaluar la <a href="http://getbootstrap.com">documentación oficial de Twitter Bootstrap</a>. Todos los componentes originales de Twitter Bootstrap están disponibles en Taboga.</p>
+	</div>
+</div>

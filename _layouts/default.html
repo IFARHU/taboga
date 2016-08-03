@@ -12,7 +12,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" type="image/png" href="images/favicon.ico" />
+        <link rel="icon" type="image/png" href="../images/favicon.ico" />
 
         <!--////////-->
         <!-- Styles -->
@@ -28,7 +28,11 @@
         <!-- Custom Fonts -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
         <!-- Modernizr -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="{{ site.baseurl }}/bower_components/modernizr/modernizr.js"></script>
+        <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="{{ site.baseurl }}/bower_components/jquery.sparkline/index.js"></script>
+        <script src="{{ site.baseurl }}/js/fusioncharts.js"></script>
+        <script src="{{ site.baseurl }}/js/fusioncharts.charts.js"></script>
         <!--////////-->
     </head>
     <body>
@@ -42,21 +46,16 @@
         </header>
         <!-- /Header-->
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    {{ content }}
-                </div><!--/col-xs-12-->
-            </div><!--/#row-->
-        </div><!--/#container-fluid-->
+        <div class="container">
+            {{ content }}
+        </div><!--/#container-->
 
         <hr />
 
         {% include footer.html %}
-        
-        <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="{{ site.baseurl }}/bower_components/jquery.sparkline/index.js"></script>
+
         <script src="{{ site.baseurl }}/build/js/bootstrap.min.js"></script>
+        <script src="{{ site.baseurl }}/bower_components/jquery-backstretch/jquery.backstretch.min.js"></script>
 
         <!-- Select2 -->
         <script src="{{ site.baseurl }}/bower_components/select2/select2.min.js"></script>
@@ -64,9 +63,10 @@
 
         <!-- Taboga -->
         <script src="{{ site.baseurl }}/build/js/taboga.min.js"></script>
-
         <script type="text/javascript">
             $('.select2').select2();
         </script>
+
+
     </body>
 </html>

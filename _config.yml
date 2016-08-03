@@ -12,7 +12,6 @@ exclude:
   - node_modules
   - resources
   - README.md
-  # - bower_components
 baseurl: /taboga
 
 # Development base url 

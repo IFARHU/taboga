@@ -15,9 +15,9 @@
 				<!-- Gets current URI for index -->
 				{% assign active = page.url  %}
 				{% if active == '/' %}
-					<li class="active"><a href="index.html">Inicio <span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="{{ site.baseurl }}/"">Inicio <span class="sr-only">(current)</span></a></li>
 				{% else %}
-					<li><a href="index.html">Inicio <span class="sr-only">(current)</span></a></li>
+					<li><a href="{{ site.baseurl }}/"">Inicio <span class="sr-only">(current)</span></a></li>
 				{% endif %} 
 
 				<!-- Gets current URI of acerca, instalacion and estilos -->

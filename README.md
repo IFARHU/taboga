@@ -31,6 +31,10 @@ Adicionalmente a los componentes con que ya cuenta Twitter Bootstrap, Taboga tie
 * Font Awesome
 * Google Web Fonts
 
+## Premio
+
+En mayo de 2016, el IFARHU obtuvo un premio en la categoría de **"Mejor Proyecto Open Source Gubernamental"**, en el **VI Premio Nacional Para la Innovación Gubernamental** por el desarrollo de Taboga. [Leer más](https://www.ifarhu.gob.pa/ifarhu-gana-dos-categorias-en-los-premios-de-innovacion-gubernamental/).
+
 ## Copyright y licencia
 
 Modificaciones realizadas por la Dirección de Tecnología Informática del Instituto para la Formación y Aprovechamiento de Recursos Humanos (IFARHU).
